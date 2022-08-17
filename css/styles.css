@@ -324,16 +324,22 @@ ul {
     position: absolute;
     top: 8px;
     right: 8px;
-    border: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     cursor: pointer;
-    background-color: var(--primary-white-color);
-    fill: var(--primary-white-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    fill: var(--logo-second-part);
+    transition: 
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .close-btn:hover {
-    fill: var(--button-background-color);
+    background-color: var(--button-background-color);
+    fill: var(--accent-color);
 
 }
 
@@ -840,8 +846,8 @@ ul {
 }
 
 .img {
-    display: block;
-}
+        display: block;
+    }
 
 .portfolio-item {
     margin: 15px;
